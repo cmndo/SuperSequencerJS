@@ -9,7 +9,7 @@
 	framesPerSecond - Choose how many frames per second you'd like this sprite to update
 	classPrefix - what is the prefix before the numbers of your css classes
 */
-function SuperSequence($elem, totalFrames, framesPerSecond, classPrefix){
+function SuperSequence($elem, framesPerSecond, classPrefix){
 	
 	var startFrame = 1;
 	var targetFrame = 1;
