@@ -1,13 +1,8 @@
-Super Sprite Sequencer
+SuperSequencerJS
 ===
-
-
-This library assumes you've using jQuery, and you're running the JavaScript once the DOM is ready.
-
-
-Build your spritesheet with <a href="http://draeton.github.io/stitches/" target="_blank">Stitches</a>
-
- You'll wind up with css like this.
+SuperSequencerJS works by cycling classnames associated with a spritesheet. It starts by adding the classname `frame1` then removes `frame1` and adds `frame2` then removes `frame2` and adds `frame3`.
+ 
+Build your spritesheet with <a href="http://draeton.github.io/stitches/" target="_blank">Stitches</a> and you wind up with css like this. 
 
 	.sprite {
 	    background-image: url(spritesheet.png);
@@ -33,8 +28,13 @@ Build your spritesheet with <a href="http://draeton.github.io/stitches/" target=
 	    background-position: -5px -255px;
 	}
 
-The next step is to rename your classes. I haven't looked too much into automatically renaming. But what you're after are names that look something like this (frame#)
+The next step is to rename your classes. I haven't looked too much into automatically renaming. But what you're after are names that follow this pattern frameName#.
 
+	.sequence {
+	    background-image: url(spritesheet.png);
+	    background-repeat: no-repeat;
+	    display: block;
+	}	
 	.frame1 {
 	    width: 320px;
 	    height: 240px;
@@ -55,7 +55,7 @@ The next step is to rename your classes. I haven't looked too much into automati
 
 Lets take a look at the DOM element that we're controlling with this library
 
-	<div class="sprite"></div>
+	<div class="sequence"></div>
 
 And finally, lets look at the JavaScript
 
