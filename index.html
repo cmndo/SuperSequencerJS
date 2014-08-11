@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/jquery-1.9.1.min.js"></script>
+
+<meta charset=utf-8 />
+
+<title>Super Sprite Sequencer</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+	
+	<div id="wrapper">
+		<header>
+			<h1>Super Sprite Sequencer</h1>
+			<h2>Aaron's Sprite Sheet Sequencer</h2>
+			<p>Build your spritesheet with <a href="http://draeton.github.io/stitches/" target="_blank">Stitches</a></p>
+			<p>You'll find a folder full of images that I exported from 3DS Max inside images/sequence. Those were used in generating my sprite sheet.</p>
+
+		</header>
+		<section>
+			<div class="sequence">Click to Play through steps</div>
+		</section>
+		
+	</div>
+	<pre>
+	var $sequence = $('.sequence'),
+	mySequence = new SuperSequence($sequence, 40, 30, "frame"),
+	nextTar = 0,
+	checkpoints = [10, 18, 26, 40];
+
+	$sequence.click(function(){
+		//playTo a frame in the sequence
+		mySequence.playTo(checkpoints[nextTar]);
+
+		//increment our counter. Next click we'll go to 18 (and so on)
+		nextTar++;
+		if(nextTar > checkpoints.length){
+			mySequence.playTo(1); //we can play backward too
+			nextTar = 0;
+		}
+	});
+
+	//Want to know when a frame has been reached? Do it like this
+	mySequence.on(15, function(e){
+		console.log(e.label); //frame15
+	});
+	</pre>
+
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+
+	var $sequence = $('.sequence'),
+		mySequence = new SuperSequence($sequence, 40, 30, "frame"),
+		nextTar = 0,
+		checkpoints = [10, 18, 26, 40];
+
+		$sequence.on('click', function(){
+			//playTo a frame in the sequence
+			mySequence.playTo(checkpoints[nextTar]);
+
+			//increment our counter. Next click we'll go to 18 (and so on)
+			nextTar++;
+			if(nextTar > checkpoints.length){
+				mySequence.playTo(1); //we can play backward too
+				nextTar = 0;
+			}
+		});
+
+		//Want to know when a frame has been reached? Do it like this
+		mySequence.on(15, function(e){
+			console.log(e.label); //frame15
+		});
+	</script>
+</body>
+</html>

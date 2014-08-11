@@ -1,0 +1,263 @@
+body {
+	background: silver;
+}
+
+.sequence {
+	width: 320px;
+	height: 240px;
+    background-image: url(images/unfold.png);
+    background-repeat: no-repeat;
+    background-position: -5px -5px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: -120px;
+}
+
+.frame1{
+    width: 320px;
+    height: 240px;
+    background-position: -5px -5px;
+}
+
+.frame2 {
+    width: 320px;
+    height: 240px;
+    background-position: -335px -5px;
+}
+
+.frame3 {
+    width: 320px;
+    height: 240px;
+    background-position: -665px -5px;
+}
+
+.frame4 {
+    width: 320px;
+    height: 240px;
+    background-position: -995px -5px;
+}
+
+.frame5 {
+    width: 320px;
+    height: 240px;
+    background-position: -1325px -5px;
+}
+
+.frame6 {
+    width: 320px;
+    height: 240px;
+    background-position: -5px -255px;
+}
+
+.frame7 {
+    width: 320px;
+    height: 240px;
+    background-position: -335px -255px;
+}
+
+.frame8 {
+    width: 320px;
+    height: 240px;
+    background-position: -665px -255px;
+}
+
+.frame9 {
+    width: 320px;
+    height: 240px;
+    background-position: -995px -255px;
+}
+
+.frame10 {
+    width: 320px;
+    height: 240px;
+    background-position: -1325px -255px;
+}
+
+.frame11 {
+    width: 320px;
+    height: 240px;
+    background-position: -5px -505px;
+}
+
+.frame12 {
+    width: 320px;
+    height: 240px;
+    background-position: -335px -505px;
+}
+
+.frame13 {
+    width: 320px;
+    height: 240px;
+    background-position: -665px -505px;
+}
+
+.frame14 {
+    width: 320px;
+    height: 240px;
+    background-position: -995px -505px;
+}
+
+.frame15 {
+    width: 320px;
+    height: 240px;
+    background-position: -1325px -505px;
+}
+
+.frame16 {
+    width: 320px;
+    height: 240px;
+    background-position: -5px -755px;
+}
+
+.frame17 {
+    width: 320px;
+    height: 240px;
+    background-position: -335px -755px;
+}
+
+.frame18 {
+    width: 320px;
+    height: 240px;
+    background-position: -665px -755px;
+}
+
+.frame19 {
+    width: 320px;
+    height: 240px;
+    background-position: -995px -755px;
+}
+
+.frame20 {
+    width: 320px;
+    height: 240px;
+    background-position: -1325px -755px;
+}
+
+.frame21 {
+    width: 320px;
+    height: 240px;
+    background-position: -5px -1005px;
+}
+
+.frame22 {
+    width: 320px;
+    height: 240px;
+    background-position: -335px -1005px;
+}
+
+.frame23 {
+    width: 320px;
+    height: 240px;
+    background-position: -665px -1005px;
+}
+
+.frame24 {
+    width: 320px;
+    height: 240px;
+    background-position: -995px -1005px;
+}
+
+.frame25 {
+    width: 320px;
+    height: 240px;
+    background-position: -1325px -1005px;
+}
+
+.frame26 {
+    width: 320px;
+    height: 240px;
+    background-position: -5px -1255px;
+}
+
+.frame27 {
+    width: 320px;
+    height: 240px;
+    background-position: -335px -1255px;
+}
+
+.frame28 {
+    width: 320px;
+    height: 240px;
+    background-position: -665px -1255px;
+}
+
+.frame29 {
+    width: 320px;
+    height: 240px;
+    background-position: -995px -1255px;
+}
+
+.frame30 {
+    width: 320px;
+    height: 240px;
+    background-position: -1325px -1255px;
+}
+
+.frame31 {
+    width: 320px;
+    height: 240px;
+    background-position: -5px -1505px;
+}
+
+.frame32 {
+    width: 320px;
+    height: 240px;
+    background-position: -335px -1505px;
+}
+
+.frame33 {
+    width: 320px;
+    height: 240px;
+    background-position: -665px -1505px;
+}
+
+.frame34 {
+    width: 320px;
+    height: 240px;
+    background-position: -995px -1505px;
+}
+
+.frame35 {
+    width: 320px;
+    height: 240px;
+    background-position: -1325px -1505px;
+}
+
+.frame36 {
+    width: 320px;
+    height: 240px;
+    background-position: -1655px -5px;
+}
+
+.frame37 {
+    width: 320px;
+    height: 240px;
+    background-position: -1655px -255px;
+}
+
+.frame38 {
+    width: 320px;
+    height: 240px;
+    background-position: -1655px -505px;
+}
+
+.frame39 {
+    width: 320px;
+    height: 240px;
+    background-position: -1655px -755px;
+}
+
+.frame40 {
+    width: 320px;
+    height: 240px;
+    background-position: -1655px -1005px;
+}
+
+.frame41 {
+    width: 320px;
+    height: 240px;
+    background-position: -1655px -1255px;
+}
